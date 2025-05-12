@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メニュー - FluffybyChedin</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ヘッダーとナビゲーション -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="about.html">カフェ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+          <li><a href="gallery.html">ギャラリー</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- メニューセクション -->
+    <section class="menu">
+      <h2>私たちのメニュー</h2>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filters">
+        <button onclick="filterMenu('all')">すべて</button>
+        <button onclick="filterMenu('main')">メイン</button>
+        <button onclick="filterMenu('drinks')">ドリンク</button>
+        <button onclick="filterMenu('dessert')">デザート</button>
+      </div>
+
+      <!-- 食べ物アイテムカード -->
+      <div class="menu-items">
+        <!-- ドーナツカード -->
+        <div class="menu-item dessert">
+          <img src="images/fluffy.jpg" alt="ドーナツ" />
+          <div class="menu-item-info">
+            <h3>ドーナツ</h3>
+            <p>
+              さまざまなトッピングとフィリングの柔らかくふわふわのドーナツ。
+            </p>
+            <span class="price">税込み170円</span>
+          </div>
+        </div>
+
+        <!-- ナシレマカード -->
+        <div class="menu-item main">
+          <img src="images/fluffy2.jpg" alt="ナシレマ" />
+          <div class="menu-item-info">
+            <h3>ナシレマ</h3>
+            <p>
+              ココナッツライス、サンバル、揚げ鶏を使った伝統的なマレーシアの料理。
+            </p>
+            <span class="price">税込み340円</span>
+          </div>
+        </div>
+
+        <!-- ラクサカード -->
+        <div class="menu-item main">
+          <img src="images/fluffy3.jpg" alt="ラクサ" />
+          <div class="menu-item-info">
+            <h3>ラクサ</h3>
+            <p>
+              ココナッツベースの濃厚なスープと新鮮なシーフードを使ったスパイシーなヌードルスープ。
+            </p>
+            <span class="price">税込み360円</span>
+          </div>
+        </div>
+
+        <!-- ミーバンドンカード -->
+        <div class="menu-item main">
+          <img src="images/fluffy4.jpg" alt="ミーバンドン" />
+          <div class="menu-item-info">
+            <h3>ミーバンドン</h3>
+            <p>
+              風味豊かなスープと柔らかい牛肉のスライスが入った食べ応えのあるヌードル料理。
+            </p>
+            <span class="price">税込み360円</span>
+          </div>
+        </div>
+
+        <!-- フェットチーネアルフレードカード -->
+        <div class="menu-item main">
+          <img src="images/fluffy5.jpg" alt="アルフレード" />
+          <div class="menu-item-info">
+            <h3>アルフレード</h3>
+            <p>
+              クリーミーなパスタにリッチなアルフレードソースをかけた、パスタ好きにはぴったりの一品。
+            </p>
+            <span class="price">税込み410円</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+      <p>&copy; 2024 FluffybyChedin | All rights reserved</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/fluffy_bychedin/">Instagram</a>
+        <a href="https://www.tiktok.com/@fluffybychedin">Tiktok</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
